@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Médico San Luis - Atención Médica de Calidad</title>
+    <link rel="shortcut icon" href="img/471583919_1123085492852525_5570290557523842115_n.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>    
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <!-- Logo -->
+            <img src="img/471583919_1123085492852525_5570290557523842115_n.jpg" alt="Grupo Médico San Luis" class="logo">
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <h1>Grupo Médico San Luis</h1>
+            <p class="tagline">Comprometidos con la excelencia y salud de nuestros pacientes</p>
+            <p>Clínica destinada a satisfacer las necesidades del paciente con la más alta calidad en atención médica integral.</p>
+            <a href="#contacto" class="cta-button">Agenda tu Cita</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🫀</div>
+                    <h3>Medicina Interna</h3>
+                    <p>Electrocardiogramas, tratamiento de diabetes, hipertensión, problemas renales y hepáticos con atención especializada.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>Ultrasonidos</h3>
+                    <p>Estudios de ultrasonido de alta calidad con equipos modernos para diagnósticos precisos y oportunos.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🤰</div>
+                    <h3>Ginecología y Obstetricia</h3>
+                    <p>Atención integral para la mujer en todas las etapas de su vida, desde control prenatal hasta ginecología general.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Pediatría</h3>
+                    <p>Cuidado especializado para los más pequeños con atención pediátrica integral y preventiva.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧪</div>
+                    <h3>Laboratorio</h3>
+                    <p>Análisis clínicos completos con resultados confiables y entrega oportuna para apoyar el diagnóstico médico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Acerca de Nosotros</h2>
+                    <p>En Grupo Médico San Luis nos dedicamos a brindar atención médica de la más alta calidad, combinando experiencia profesional con tecnología moderna para ofrecer servicios integrales de salud.</p>
+                    <p>Nuestro compromiso es satisfacer las necesidades de cada paciente con un enfoque humano y profesional, garantizando la excelencia en cada consulta y procedimiento.</p>
+                    <p>Contamos con especialistas altamente calificados y equipos médicos de última generación para brindar el mejor servicio a nuestra comunidad.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/ChatGPT Image 18 ago 2025, 09_17_39 p.m..png" alt="Instalaciones médicas modernas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Dirección:</strong><br>
+                            Calle 46 Nº 452<br>
+                            (frente a Hospital San Carlos)<br>
+                            Tizimín, México
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Teléfono:</strong><br>
+                            986 115 0227
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email:</strong><br>
+                            grupomedicosanluis@gmail.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <strong>Horarios:</strong><br>
+                            Lunes a Viernes: 8:00 - 18:00<br>
+                            Sábados: 8:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Agenda tu Cita</h3>
+                    
+                    <div id="form-message" class="message"></div>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <div class="error-message">Por favor ingresa tu nombre completo</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                            <div class="error-message">Por favor ingresa un número de teléfono válido</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message">Por favor ingresa un email válido</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="medicina-interna">Medicina Interna</option>
+                                <option value="ultrasonidos">Ultrasonidos</option>
+                                <option value="ginecologia">Ginecología y Obstetricia</option>
+                                <option value="pediatria">Pediatría</option>
+                                <option value="laboratorio">Laboratorio</option>
+                            </select>
+                            <div class="error-message">Por favor selecciona un servicio</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                            <div class="error-message">Por favor ingresa tu mensaje</div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <span class="loading-spinner" id="loading-spinner"></span>
+                            <span id="btn-text">📱 Enviar a WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Grupo Médico San Luis</h4>
+                    <p>Comprometidos con la excelencia y salud de nuestros pacientes desde hace años.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <p>Medicina Interna • Ultrasonidos<br>
+                    Ginecología • Pediatría • Laboratorio</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Calle 46 Nº 452, Tizimín<br>
+                    Tel: 986 115 0227<br>
+                    grupomedicosanluis@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grupo Médico San Luis. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>    
